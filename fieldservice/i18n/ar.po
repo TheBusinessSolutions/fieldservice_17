@@ -1,0 +1,3926 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fieldservice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__meeting_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__meeting_count
+msgid "# Meetings"
+msgstr "عدد الاجتماعات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__opportunity_count
+msgid "# Opportunities"
+msgstr "عدد الفرص"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__task_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__task_count
+msgid "# Tasks"
+msgstr "عدد المهام"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__supplier_invoice_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__supplier_invoice_count
+msgid "# Vendor Bills"
+msgstr "عدد فواتير الموردين"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__owned_location_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__owned_location_count
+#: model:ir.model.fields,field_description:fieldservice.field_res_partner__owned_location_count
+#: model:ir.model.fields,field_description:fieldservice.field_res_users__owned_location_count
+msgid "# of Owned Locations"
+msgstr "عدد المواقع المملوكة"
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/models/fsm_order.py:0
+#, python-format
+msgid "%(date)s is a holiday: %(holidays)s"
+msgstr "%(date)s يوم اجازه: %(holidays)s"
+
+#. module: fieldservice
+#: model:ir.actions.report,print_report_name:fieldservice.action_report_fsm_order
+msgid "'Service Order - %s' % (object.name)"
+msgstr "'أمر الخدمة - %s' % (object.name)"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__type
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__type
+#: model:ir.model.fields,help:fieldservice.field_res_partner__type
+#: model:ir.model.fields,help:fieldservice.field_res_users__type
+msgid ""
+"- Contact: Use this to organize the contact details of employees of a given "
+"company (e.g. CEO, CFO, ...).\n"
+"- Invoice Address: Preferred address for all invoices. Selected by default "
+"when you invoice an order that belongs to this company.\n"
+"- Delivery Address: Preferred address for all deliveries. Selected by "
+"default when you deliver an order that belongs to this company.\n"
+"- Other: Other address for the company (e.g. subsidiary, ...)"
+msgstr ""
+"- جهة اتصال: استخدم هذا لتنظيم تفاصيل الاتصال بموظفي شركة معينة (مثل المدير التنفيذي، المدير المالي، ...).\n"
+"- عنوان الفواتير: العنوان المفضل لجميع الفواتير. يتم اختياره افتراضياً عند فوترة أمر يخص هذه الشركة.\n"
+"- عنوان التسليم: العنوان المفضل لجميع عمليات التسليم. يتم اختياره افتراضياً عند تسليم أمر يخص هذه الشركة.\n"
+"- أخرى: عناوين أخرى للشركة (مثل الفروع، ...)"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "<span>Reporting</span>"
+msgstr "<span>التقارير</span>"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "<span>View</span>"
+msgstr "<span>عرض</span>"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.report_fsm_order_document
+msgid "<strong>Assigned To:</strong>"
+msgstr "<strong>مُسند إلى:</strong>"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.report_fsm_order_document
+msgid "<strong>Date Completed:</strong>"
+msgstr "<strong>تاريخ الانتهاء:</strong>"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.report_fsm_order_document
+msgid "<strong>ETA:</strong>"
+msgstr "<strong>الوقت المتوقع للوصول:</strong>"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+msgid "<strong>The contact linked to this user is still active</strong>"
+msgstr "<strong>جهة الاتصال المرتبطة بهذا المستخدم لا تزال نشطة</strong>"
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/wizard/fsm_wizard.py:0
+#, fuzzy, python-format
+msgid "A Field Service Location related to that partner already exists."
+msgstr "يوجد بالفعل موقع خدمة ميدانية مرتبط بهذا الشريك."
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/wizard/fsm_wizard.py:0
+#, python-format
+msgid "A Field Service Worker related to that partner already exists."
+msgstr "يوجد بالفعل موظف خدمة ميدانية مرتبط بهذا الشريك."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_account_payable_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__property_account_payable_id
+msgid "Account Payable"
+msgstr "حسابات الدائنين"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_account_receivable_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__property_account_receivable_id
+msgid "Account Receivable"
+msgstr "حسابات المدينين"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_needaction
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_needaction
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_needaction
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_needaction
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_needaction
+#, fuzzy
+msgid "Action Needed"
+msgstr "يتطلب إجراء"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__active
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__active
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person_calendar_filter__active
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__active
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__active
+#, fuzzy
+msgid "Active"
+msgstr "نشط"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__active_lang_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__active_lang_count
+msgid "Active Lang Count"
+msgstr "عدد اللغات النشطة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__activity_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__activity_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__activity_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__activity_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__activity_exception_decoration
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__activity_exception_decoration
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__activity_exception_decoration
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__activity_exception_decoration
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__activity_state
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__activity_state
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__activity_state
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__activity_state
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__activity_type_icon
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__activity_type_icon
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__activity_type_icon
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__activity_type_icon
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__date_end
+#, fuzzy
+msgid "Actual End"
+msgstr "النهاية الفعلية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__date_start
+#, fuzzy
+msgid "Actual Start"
+msgstr "البداية الفعلية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__duration
+#, fuzzy
+msgid "Actual duration"
+msgstr "المدة الفعلية"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__duration
+#, fuzzy
+msgid "Actual duration in hours"
+msgstr "المدة الفعلية بالساعات"
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_person
+msgid "Add Field Service Workers here."
+msgstr "أضف موظفي الخدمة الميدانية هنا."
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_dash_equipment
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_equipment
+msgid "Add a Field Service Equipment here."
+msgstr "أضف معدات الخدمة الميدانية هنا."
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_category
+msgid "Add a Field Service Worker Category here."
+msgstr "أضف فئة لموظفي الخدمة الميدانية هنا."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Add a description for the order..."
+msgstr "أضف وصفاً لأمر الخدمة..."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_stage_form_view
+msgid "Add a description..."
+msgstr "إضافة وصف..."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_create_sub_location_wizard
+msgid "Address"
+msgstr "العنوان"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__type
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__type
+#: model:ir.model.fields,field_description:fieldservice.field_res_partner__type
+#: model:ir.model.fields,field_description:fieldservice.field_res_users__type
+msgid "Address Type"
+msgstr "نوع العنوان"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "All"
+msgstr "الكل"
+
+#. module: fieldservice
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_operation_order
+msgid "All Orders"
+msgstr "كافه الزيارات"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__lang
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__lang
+msgid ""
+"All the emails and documents sent to this contact will be translated in this "
+"language."
+msgstr "سيتم ترجمة جميع رسائل البريد الإلكتروني والمستندات المرسلة إلى جهة الاتصال هذه بهذه اللغة."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_google_map
+msgid "Allow Field Service Google Map"
+msgstr "السماح بخرائط جوجل للخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Allow Field Service Google Maps"
+msgstr "السماح بخرائط جوجل للخدمة الميدانية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_web_timeline_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Allow Field Service Web Timeline View"
+msgstr "السماح بعرض المخطط الزمني للخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_stage_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_stage_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_search
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__location_id
+msgid "Assigned Location"
+msgstr "الموقع المحدد"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__person_id
+msgid "Assigned Operator"
+msgstr "المشغل المعين"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__person_id
+msgid "Assigned To"
+msgstr "مُسند إلى"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_attachment_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_attachment_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_attachment_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_attachment_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Auto-fill the equipments on the order"
+msgstr "تعبئة المعدات تلقائياً في الزيارة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Auto-fill the workers on the location"
+msgstr "تعبئة العاملين تلقائياً في الموقع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__auto_populate_equipments_on_order
+msgid "Auto-populate Equipments on Order based on Location"
+msgstr "تعبئة المعدات تلقائياً في الأمر بناءً على الموقع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__auto_populate_persons_on_location
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__auto_populate_persons_on_location
+msgid "Auto-populate Workers on Location based on Territory"
+msgstr "تعبئة العاملين تلقائياً في الموقع بناءً على المنطقة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__auto_populate_equipments_on_order
+msgid "Auto-populate equipments on Order based on the Location"
+msgstr "تعبئة المعدات تلقائياً في الأمر بناءً على الموقع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Auto-populate the equipments on the order based on the location content"
+msgstr "تعبئة المعدات تلقائياً في الزيارة بناءً على محتوى الموقع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid ""
+"Auto-populate the preferred workers of a location based on the territory"
+msgstr "تعبئة العاملين المفضلين للموقع تلقائياً بناءً على المنطقة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid ""
+"Automatically creates a day route when an order is assigned and scheduled"
+msgstr "إنشاء مسار يومي تلقائياً عند تعيين وجدولة الزيارة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__avatar_1920
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__avatar_1920
+msgid "Avatar"
+msgstr "الصورة الرمزية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__avatar_1024
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__avatar_1024
+msgid "Avatar 1024"
+msgstr "الصورة الرمزية 1024"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__avatar_128
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__avatar_128
+msgid "Avatar 128"
+msgstr "الصورة الرمزية 128"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__avatar_256
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__avatar_256
+msgid "Avatar 256"
+msgstr "الصورة الرمزية 256"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__avatar_512
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__avatar_512
+msgid "Avatar 512"
+msgstr "الصورة الرمزية 512"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__bank_account_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__bank_account_count
+msgid "Bank"
+msgstr "البنك"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__bank_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__bank_ids
+msgid "Banks"
+msgstr "البنوك"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__barcode
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__barcode
+msgid "Barcode"
+msgstr "باركود"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__is_blacklisted
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__is_blacklisted
+msgid "Blacklist"
+msgstr "القائمة السوداء"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__mobile_blacklisted
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__mobile_blacklisted
+msgid "Blacklisted Phone Is Mobile"
+msgstr "الهاتف الموجود بالقائمة السوداء هو هاتف محمول"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__phone_blacklisted
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__phone_blacklisted
+msgid "Blacklisted Phone is Phone"
+msgstr "الهاتف الموجود بالقائمة السوداء هو هاتف أرضي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_bounce
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_bounce
+msgid "Bounce"
+msgstr "الرسائل المرتدة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__branch_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__branch_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__branch_id
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__branch_manager_id
+msgid "Branch Manager"
+msgstr "مدير الفرع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_crm
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "CRM"
+msgstr "إدارة علاقات العملاء (CRM)"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.partner_wizard_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_create_sub_location_wizard
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Cancel Order"
+msgstr "إلغاء الزيارة"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.fsm_stage_cancelled
+msgid "Cancelled"
+msgstr "مُلغى"
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/models/fsm_stage.py:0
+#, python-format
+msgid ""
+"Cannot create FSM Stage because it has the same Type and Sequence of an "
+"existing FSM Stage."
+msgstr "لا يمكن إنشاء مرحلة خدمة ميدانية لأنها تملك نفس النوع والتسلسل لمرحلة موجودة بالفعل."
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/models/fsm_order.py:0
+#, python-format
+msgid "Cannot move to completed from Kanban"
+msgstr "لا يمكن نقل الزيارة إلى حالة مكتملة من لوحة كانبان - يجب إغلاقها من شاشة الزيارة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__category_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__category_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__category_ids
+#: model:ir.ui.menu,name:fieldservice.menu_hr_skill
+msgid "Categories"
+msgstr "الفئات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_category_form_view
+#, fuzzy
+msgid "Category"
+msgstr "الفئة"
+
+#. module: fieldservice
+#: model:ir.model.constraint,message:fieldservice.constraint_fsm_category_name_uniq
+msgid "Category name already exists!"
+msgstr "اسم الفئة موجود بالفعل!"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_change_management
+msgid "Change Management"
+msgstr "إدارة التغيير"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__channel_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__channel_ids
+msgid "Channels"
+msgstr "القنوات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Check collected payments"
+msgstr "التحقق من المدفوعات المحصلة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__is_company
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr "حدد إذا كانت جهة الاتصال شركة، وإلا فإنها تعتبر فرداً"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Check inventory"
+msgstr "فحص المخزون"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Check the amount collected by the worker during the route"
+msgstr "التحقق من المبلغ المحصل بواسطة العامل خلال المسار"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_route_account
+msgid "Check the amount collected during the route"
+msgstr "التحقق من المبلغ المحصل خلال المسار"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_route_stock
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Check the inventory of the vehicle at the end of the route"
+msgstr "فحص مخزون المركبة في نهاية المسار"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__employee
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__employee
+msgid "Check this box if this contact is an Employee."
+msgstr "حدد هذا المربع إذا كانت جهة الاتصال هذه موظفاً."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__country_enforce_cities
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__country_enforce_cities
+msgid ""
+"Check this box to ensure every address created in that country has a 'City' "
+"chosen in the list of the country's cities."
+msgstr "حدد هذا المربع للتأكد من أن كل عنوان يتم إنشاؤه في تلك الدولة لديه 'مدينة' مختارة من قائمة مدن الدولة."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__child_id
+msgid "Child Categories"
+msgstr "الفئات الفرعية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__child_ids
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_form_view
+msgid "Children"
+msgstr "الفروع التابعة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_template__team_id
+msgid "Choose a team to be set on orders of this template"
+msgstr "اختر فريقاً ليتم تعيينه في أوامر هذا النموذج"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__city
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__city
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__city
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__city
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_create_sub_location_wizard
+msgid "City"
+msgstr "المدينة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__city_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__city_id
+msgid "City ID"
+msgstr "معرف المدينة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__tag_ids
+msgid "Classify and analyze your orders"
+msgstr "تصنيف وتحليل الأوامر الخاصة بك"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__custom_color
+msgid "Color Code"
+msgstr "رمز اللون"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__color
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__color
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__color
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__color
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__color
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__color
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__color
+msgid "Color Index"
+msgstr "مؤشر اللون"
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/models/fsm_stage.py:0
+#, python-format
+msgid "Color code should be Hex Code. Ex:-#FFFFFF"
+msgstr "يجب أن يكون رمز اللون بنظام Hex. مثال: #FFFFFF"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__commercial_partner_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__commercial_partner_id
+msgid "Commercial Entity"
+msgstr "الكيان التجاري"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__ref_company_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "الشركات التي تشير إلى الشريك"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__company_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__company_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__company_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__company_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__company_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__company_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__company_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__company_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__company_id
+#, fuzzy
+msgid "Company"
+msgstr "الشركة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__company_registry
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__company_registry
+msgid "Company ID"
+msgstr "معرف الشركة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__company_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__company_name
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__commercial_company_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__commercial_company_name
+msgid "Company Name Entity"
+msgstr "كيان اسم الشركة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__company_type
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__company_type
+msgid "Company Type"
+msgstr "نوع الشركة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_category__company_id
+msgid "Company related to this category"
+msgstr "الشركة المرتبطة بهذه الفئة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__company_id
+msgid "Company related to this equipment"
+msgstr "الشركة المرتبطة بهذه المعدات"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__company_id
+msgid "Company related to this order"
+msgstr "الشركة المرتبطة بهذا الأمر"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_tag__company_id
+msgid "Company related to this tag"
+msgstr "الشركة المرتبطة بهذا الوسم"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__company_id
+msgid "Company related to this team"
+msgstr "الشركة المرتبطة بهذا الفريق"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_template__company_id
+msgid "Company related to this template"
+msgstr "الشركة المرتبطة بهذا النموذج"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Complete"
+msgstr "إنهاء"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__contact_address
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__contact_address
+msgid "Complete Address"
+msgstr "العنوان الكامل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__complete_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__complete_name
+msgid "Complete Name"
+msgstr "الاسم الكامل"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.fsm_stage_completed
+msgid "Completed"
+msgstr "مكتمل"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Compute Localization"
+msgstr "حساب الموقع الجغرافي"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Compute based on address"
+msgstr "الحساب بناءً على العنوان"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_res_config_settings
+#, fuzzy
+msgid "Config Settings"
+msgstr "تهيئة الإعدادات"
+
+#. module: fieldservice
+#: model:ir.ui.menu,name:fieldservice.config
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_res_partner
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__child_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__contact_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__child_ids
+#, fuzzy
+msgid "Contact"
+msgstr "جهات الاتصال"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Contacts"
+msgstr "جهات الاتصال"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__contact_count
+msgid "Contacts Count"
+msgstr "عدد جهات الاتصال"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.partner_wizard_view
+msgid "Convert"
+msgstr "تحويل"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.partner_fsm_action
+msgid "Convert to FSM Record"
+msgstr "تحويل إلى سجل زيارة موقع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.partner_wizard_view
+msgid "Convert to a Field Service Worker or Location"
+msgstr "تحويل إلى موظف خدمة ميدانية أو موقع"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__message_bounce
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__message_bounce
+msgid "Counter of the number of bounced emails for this contact"
+msgstr "عدد رسائل البريد الإلكتروني المرتدة لجهة الاتصال هذه"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__country_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__country_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__country_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__country_id
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_create_sub_location_wizard
+msgid "Country"
+msgstr "الدولة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__country_code
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__country_code
+msgid "Country Code"
+msgstr "رمز الدولة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_create_sub_location_wizard
+msgid "Create"
+msgstr "إنشاء"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Create FSM Orders from Opportunities"
+msgstr "إنشاء أوامر خدمة ميدانية من الفرص البيعية"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_create_sub_location
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_create_sub_location_wizard
+msgid "Create Sub Location"
+msgstr "إنشاء موقع فرعي"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_inherit
+msgid "Create Sub-Location"
+msgstr "إنشاء موقع فرعي"
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_customer
+msgid "Create a Customer."
+msgstr "إنشاء عميل."
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_location
+msgid "Create a Service Location"
+msgstr "إنشاء موقع للزيارة"
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_stage
+msgid "Create a Stage."
+msgstr "إنشاء مرحلة."
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_team_settings
+msgid "Create a new team"
+msgstr "إنشاء فريق جديد"
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_tag
+msgid "Create a tag."
+msgstr "إنشاء وسم."
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_dash_order
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_operation_order
+msgid "Create an Order."
+msgstr "إنشاء أمر جديد."
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_template
+msgid "Create an order template"
+msgstr "إنشاء قالب زيارة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Create multiple FSM Locations at once using Location Builder Wizard"
+msgstr "إنشاء عدة مواقع خدمة ميدانية في وقت واحد باستخدام معالج بناء المواقع"
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_location_person
+msgid "Create the linked locations of a worker."
+msgstr "إنشاء المواقع المرتبطة بالعامل."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid ""
+"Create vendor bills and customer invoices when completing service orders."
+msgstr "إنشاء فواتير الموردين وفواتير العملاء عند الانتهاء من أوامر الخدمة."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order_type__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person_calendar_filter__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__create_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_wizard__create_uid
+#, fuzzy
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order_type__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person_calendar_filter__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__create_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_wizard__create_date
+#, fuzzy
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__credit_limit
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__credit_limit
+msgid "Credit Limit"
+msgstr "الحد الائتماني"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__credit_to_invoice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__credit_to_invoice
+msgid "Credit To Invoice"
+msgstr "رصيد بانتظار الفوترة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__credit_limit
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__credit_limit
+msgid "Credit limit specific to this partner."
+msgstr "الحد الائتماني الخاص بهذا الشريك."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__currency_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__current_date
+msgid "Current Date"
+msgstr "التاريخ الحالي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__current_location_id
+msgid "Current Location"
+msgstr "الموقع الحالي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_stock_customer
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__property_stock_customer
+msgid "Customer Location"
+msgstr "موقع العميل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_payment_term_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__property_payment_term_id
+msgid "Customer Payment Terms"
+msgstr "شروط سداد العميل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__customer_rank
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__customer_rank
+msgid "Customer Rank"
+msgstr "رتبة العميل"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_customer
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_customer
+msgid "Customers"
+msgstr "العملاء"
+
+#. module: fieldservice
+#: model:ir.ui.menu,name:fieldservice.dashboard
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__days_sales_outstanding
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__days_sales_outstanding
+msgid "Days Sales Outstanding (DSO)"
+msgstr "أيام المبيعات المعلقة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__location_id
+msgid "Default Location "
+msgstr "الموقع الافتراضي"
+
+#. module: fieldservice
+#: model:fsm.team,name:fieldservice.fsm_team_default
+msgid "Default Team"
+msgstr "الفريق الافتراضي"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_template__duration
+msgid "Default duration in hours"
+msgstr "المدة الافتراضية بالساعات"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__team_id
+msgid "Default team assigned to orders in this location"
+msgstr "الفريق الافتراضي المعين للأوامر في هذا الموقع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__trust
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__trust
+msgid "Degree of trust you have in this debtor"
+msgstr "درجة الثقة في هذا المدين"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__description
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__description
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__description
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__description
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__description
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.report_fsm_order_document
+msgid "Description"
+msgstr "الوصف"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__direction
+msgid "Direction"
+msgstr "الاتجاه"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Directions"
+msgstr "الاتجاهات"
+
+#. module: fieldservice
+#: model:res.groups,name:fieldservice.group_fsm_dispatcher
+msgid "Dispatcher"
+msgstr "المُوزع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order_type__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person_calendar_filter__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__display_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_wizard__display_name
+#, fuzzy
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Display locations and orders on a map with Google Maps"
+msgstr "عرض المواقع والزيارات على الخريطة باستخدام خرائط جوجل"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Display locations and orders on a map with OpenStreetMap"
+msgstr "عرض المواقع والزيارات على الخريطة باستخدام OpenStreetMap"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__district_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__district_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__district_id
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "District"
+msgstr "المنطقة/الحي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__district_manager_id
+msgid "District Manager"
+msgstr "مدير المنطقة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "Done"
+msgstr "منتهي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__street_number2
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__street_number2
+msgid "Door"
+msgstr "رقم الشقة/الباب"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Due This Week"
+msgstr "يستحق هذا الأسبوع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Due Within 30 Days"
+msgstr "يستحق خلال 30 يوماً"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Due Within 7 Days"
+msgstr "يستحق خلال 7 أيام"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__duplicated_bank_account_partners_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__duplicated_bank_account_partners_count
+msgid "Duplicated Bank Account Partners Count"
+msgstr "عدد الشركاء بحسابات بنكية مكررة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__duration
+msgid "Duration"
+msgstr "المدة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__request_early
+msgid "Earliest Request Date"
+msgstr "أبكر تاريخ طلب"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_kanban_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_kanban_view
+msgid "Edit"
+msgstr "تعديل"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__partner_share
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__partner_share
+msgid ""
+"Either customer (not a user), either shared user. Indicated the current "
+"partner is a customer without access or with a limited access created for "
+"sharing data."
+msgstr ""
+"إما عميل (ليس مستخدماً)، أو مستخدم مشترك. يشير إلى أن الشريك الحالي هو عميل بدون صلاحية وصول أو بصلاحية محدودة تم إنشاؤها لمشاركة البيانات."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__email
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__email
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__email
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__email
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__employee
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__employee_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__employee_ids
+msgid "Employees"
+msgstr "الموظفين"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__employees_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__employees_count
+msgid "Employees Count"
+msgstr "عدد الموظفين"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__country_enforce_cities
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__country_enforce_cities
+msgid "Enforce Cities"
+msgstr "فرض اختيار المدن"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Enter the resolution for the order..."
+msgstr "أدخل الحل الخاص بالزيارة..."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__equipment_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__equipment_id
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_stage__stage_type__equipment
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Equipment"
+msgstr "المعدة"
+
+#. module: fieldservice
+#: model:ir.model.constraint,message:fieldservice.constraint_fsm_equipment_name_uniq
+msgid "Equipment name already exists!"
+msgstr "اسم المعدة موجود مسبقاً!"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.equipment_stage_1
+msgid "Equipment-1"
+msgstr "معدة-1"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.equipment_stage_2
+msgid "Equipment-2"
+msgstr "معدة-2"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.equipment_stage_3
+msgid "Equipment-3"
+msgstr "معدة-3"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_report_equipment
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__equipment_ids
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_dash_equipment
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_equipment
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_report_equipment
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_graph_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_pivot_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Equipments"
+msgstr "المعدات"
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_report_equipment
+msgid "Equipments Report"
+msgstr "تقرير المعدات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Execution"
+msgstr "التنفيذ"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_stage__legend_priority
+msgid ""
+"Explanation text to help users using the star and priority mechanism on "
+"stages or orders that are in this stage."
+msgstr "نص توضيحي لمساعدة المستخدمين في استخدام آلية النجمة والأولوية في المراحل أو الأوامر الموجودة في هذه المرحلة."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.report_fsm_order_document
+msgid "FS Order #"
+msgstr "زيارة رقم #"
+
+#. module: fieldservice
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_order_type__internal_type__fsm
+msgid "FSM"
+msgstr "الزيارات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_search_view
+msgid "FSM Equipment Name"
+msgstr "اسم معدات الخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "FSM Location Builder"
+msgstr "باني مواقع الخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_graph_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_pivot_view
+msgid "FSM Locations"
+msgstr "مواقع الزيارات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "FSM Order Name"
+msgstr "اسم أمر الزيارة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order_calendar_view
+#, fuzzy
+msgid "FSM Orders"
+msgstr "أوامر الزيارات"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_person_calendar_filter
+msgid "FSM Person Calendar Filter"
+msgstr "فلتر تقويم أفراد الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_wizard
+msgid "FSM Record Conversion"
+msgstr "تحويل سجلات الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person_calendar_filter__person_id
+msgid "FSM Worker"
+msgstr "الفني"
+
+#. module: fieldservice
+#: model:ir.module.category,name:fieldservice.fsm
+#: model:ir.ui.menu,name:fieldservice.root
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_partner_fields
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Field Service"
+msgstr "الزيارات"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_category
+#, fuzzy
+msgid "Field Service Category"
+msgstr "فئة طلب الزيارة"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_dash_equipment
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_equipment
+#: model:ir.model,name:fieldservice.model_fsm_equipment
+msgid "Field Service Equipment"
+msgstr "معدات طلب الزيارة"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_location
+msgid "Field Service Location"
+msgstr "موقع الزيارة"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_location_person
+msgid "Field Service Location Person Info"
+msgstr "معلومات المسؤول في موقع الزيارة"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_order
+msgid "Field Service Order"
+msgstr "طلب زيارة"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_template
+msgid "Field Service Order Template"
+msgstr "قالب أمر الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_order_type
+msgid "Field Service Order Type"
+msgstr "نوع طلب الزيارة"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_stage
+msgid "Field Service Stage"
+msgstr "حالة طلب الزيارة"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_tag
+msgid "Field Service Tag"
+msgstr "وسم الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_team
+msgid "Field Service Team"
+msgstr "فريق الزيارة"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_person
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+msgid "Field Service Worker"
+msgstr "الفني المختص بالزيارة"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_category
+msgid "Field Service Worker Category"
+msgstr "فئة فني الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_person
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__person_ids
+#: model:ir.model.fields,field_description:fieldservice.field_res_territory__person_ids
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_territory_form_view_inherit
+msgid "Field Service Workers"
+msgstr "الفنيين المختصين بالزيارة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__phone_sanitized
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__phone_sanitized
+msgid ""
+"Field used to store sanitized phone number. Helps speeding up searches and "
+"comparisons."
+msgstr "حقل يستخدم لتخزين رقم الهاتف المنقح. يساعد في تسريع عمليات البحث والمقارنات."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__fiscal_country_codes
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__fiscal_country_codes
+msgid "Fiscal Country Codes"
+msgstr "أكواد الدولة المالية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_account_position_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__property_account_position_id
+msgid "Fiscal Position"
+msgstr "المركز المالي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__fold
+msgid "Folded in Kanban"
+msgstr "مطوي في عرض كانبان"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_follower_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_follower_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_follower_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_follower_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_partner_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_partner_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_partner_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_partner_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (شركاء)"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__activity_type_icon
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__activity_type_icon
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__activity_type_icon
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__activity_type_icon
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة Font Awesome مثل fa-tasks"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__email_formatted
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__email_formatted
+msgid "Format email address \"Name <email@domain>\""
+msgstr "تنسيق البريد الإلكتروني \"الاسم <email@domain>\""
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__email_formatted
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__email_formatted
+msgid "Formatted Email"
+msgstr "بريد إلكتروني منسق"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_model_mixin
+msgid "Fsm Model Mixin"
+msgstr "Fsm Model Mixin"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__full_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__full_name
+msgid "Full Name"
+msgstr "الاسم الكامل"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Future Orders"
+msgstr "الزيارات القادمة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__global_location_number
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__global_location_number
+msgid "GLN"
+msgstr "GLN"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "General Notes"
+msgstr "ملاحظات عامة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__partner_latitude
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__partner_latitude
+msgid "Geo Latitude"
+msgstr "خط العرض الجغرافي"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Geo Location"
+msgstr "الموقع الجغرافي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__partner_longitude
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__partner_longitude
+msgid "Geo Longitude"
+msgstr "خط الطول الجغرافي"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Geolocation"
+msgstr "تحديد الموقع الجغرافي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__date_localization
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__date_localization
+msgid "Geolocation Date"
+msgstr "تاريخ تحديد الموقع"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__global_location_number
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__global_location_number
+msgid "Global Location Number"
+msgstr "رقم الموقع العالمي (GLN)"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_person_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__has_message
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__has_message
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__has_message
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__has_message
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__has_unreconciled_entries
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__has_unreconciled_entries
+msgid "Has Unreconciled Entries"
+msgstr "لديه قيود غير مسواة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__hide
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__hide
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_model_mixin__hide
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__hide
+msgid "Hide"
+msgstr "إخفاء"
+
+#. module: fieldservice
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_order__priority__2
+msgid "High"
+msgstr "مرتفع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__fsm_order_request_late_high
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__fsm_order_request_late_high
+msgid "Hours of Buffer for High Priority FS Orders"
+msgstr "ساعات الاحتياط لأوامر الزيارات ذات الأولوية المرتفعة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__fsm_order_request_late_low
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__fsm_order_request_late_low
+msgid "Hours of Buffer for Low Priority FS Orders"
+msgstr "ساعات الاحتياط لأوامر الزيارات ذات الأولوية المنخفضة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__fsm_order_request_late_lowest
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__fsm_order_request_late_lowest
+msgid "Hours of Buffer for Lowest Priority FS Orders"
+msgstr "ساعات الاحتياط لأوامر الزيارات ذات الأولوية الأدنى"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__fsm_order_request_late_medium
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__fsm_order_request_late_medium
+msgid "Hours of Buffer for Medium Priority FS Orders"
+msgstr "ساعات الاحتياط لأوامر الزيارات ذات الأولوية المتوسطة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__street_number
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__street_number
+msgid "House"
+msgstr "رقم المنزل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order_type__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person_calendar_filter__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_wizard__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__im_status
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__im_status
+msgid "IM Status"
+msgstr "حالة المراسلة الفورية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__activity_exception_icon
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__activity_exception_icon
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__activity_exception_icon
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__activity_exception_icon
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__activity_exception_icon
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__activity_exception_icon
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__activity_exception_icon
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__activity_exception_icon
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__message_needaction
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__message_needaction
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__message_needaction
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__message_needaction
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا كان محدداً، فهناك رسائل جديدة تتطلب اهتمامك."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__message_has_error
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__message_has_sms_error
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__message_has_error
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__message_has_sms_error
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__message_has_error
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__message_has_sms_error
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__message_has_error
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__message_has_sms_error
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__message_has_error
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا كان محدداً، فهناك رسائل بها خطأ في التسليم."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__is_blacklisted
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__is_blacklisted
+msgid ""
+"If the email address is on the blacklist, the contact won't receive mass "
+"mailing anymore, from any list"
+msgstr "إذا كان البريد الإلكتروني في القائمة السوداء، فلن يتلقى جهة الاتصال رسائل جماعية من أي قائمة بعد الآن."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__phone_sanitized_blacklisted
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__phone_sanitized_blacklisted
+msgid ""
+"If the sanitized phone number is on the blacklist, the contact won't receive "
+"mass mailing sms anymore, from any list"
+msgstr "إذا كان رقم الهاتف المنقح في القائمة السوداء، فلن يتلقى جهة الاتصال رسائل نصية جماعية من أي قائمة بعد الآن."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__image_1920
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__image_1920
+msgid "Image"
+msgstr "الصورة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__image_1024
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__image_1024
+msgid "Image 1024"
+msgstr "صورة 1024"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__image_128
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__image_128
+msgid "Image 128"
+msgstr "صورة 128"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__image_256
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__image_256
+msgid "Image 256"
+msgstr "صورة 256"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__image_512
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__image_512
+msgid "Image 512"
+msgstr "صورة 512"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__mobile_blacklisted
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__mobile_blacklisted
+msgid ""
+"Indicates if a blacklisted sanitized phone number is a mobile number. Helps "
+"distinguish which number is blacklisted             when there is both a "
+"mobile and phone field in a model."
+msgstr "يشير ما إذا كان رقم الهاتف المنقح الموجود في القائمة السوداء هو رقم جوال. يساعد في تمييز أي رقم تم إدراجه في القائمة السوداء عند وجود حقلين للجوال والهاتف في النموذج."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__phone_blacklisted
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__phone_blacklisted
+msgid ""
+"Indicates if a blacklisted sanitized phone number is a phone number. Helps "
+"distinguish which number is blacklisted             when there is both a "
+"mobile and phone field in a model."
+msgstr "يشير ما إذا كان رقم الهاتف المنقح الموجود في القائمة السوداء هو رقم هاتف أرضي. يساعد في تمييز أي رقم تم إدراجه في القائمة السوداء عند وجود حقلين للجوال والهاتف في النموذج."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__industry_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__industry_id
+msgid "Industry"
+msgstr "المجال"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__contact_address_inline
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__contact_address_inline
+msgid "Inlined Complete Address"
+msgstr "العنوان الكامل المختصر"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__todo
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__instructions
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_template_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.report_fsm_order_document
+msgid "Instructions"
+msgstr "التوجيهات المتبعة لتنفيذ الزيارة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__internal_type
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order_type__internal_type
+msgid "Internal Type"
+msgstr "النوع الداخلي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__invoice_warn
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__invoice_warn
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_account
+msgid "Invoice your FSM orders"
+msgstr "إنشاء فاتورة لأوامر الزيارات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Invoice your Service Orders"
+msgstr "فوترة أوامر الخدمة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__invoice_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__invoice_ids
+msgid "Invoices"
+msgstr "الفواتير"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__is_button
+msgid "Is Button"
+msgstr "هو زر"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__is_coa_installed
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__is_coa_installed
+msgid "Is Coa Installed"
+msgstr "تم تثبيت دليل الحسابات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_is_follower
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_is_follower
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_is_follower
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_is_follower
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_is_follower
+msgid "Is Follower"
+msgstr "هو متابع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__is_public
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__is_public
+msgid "Is Public"
+msgstr "عام"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__is_company
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__is_company
+msgid "Is a Company"
+msgstr "هي شركة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__fsm_location
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__fsm_location
+#: model:ir.model.fields,field_description:fieldservice.field_res_partner__fsm_location
+#: model:ir.model.fields,field_description:fieldservice.field_res_users__fsm_location
+msgid "Is a FS Location"
+msgstr "هل العنوان موقع زيارة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__fsm_person
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__fsm_person
+#: model:ir.model.fields,field_description:fieldservice.field_res_partner__fsm_person
+#: model:ir.model.fields,field_description:fieldservice.field_res_users__fsm_person
+msgid "Is a FS Worker"
+msgstr "هل يعتبر فني زيارة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__is_closed
+msgid "Is a close stage"
+msgstr "هي مرحلة إغلاق"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__is_default
+msgid "Is a default stage"
+msgstr "هي مرحلة افتراضية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__is_closed
+msgid "Is closed"
+msgstr "مغلق"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__function
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__function
+msgid "Job Position"
+msgstr "المنصب الوظيفي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__journal_item_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__journal_item_count
+msgid "Journal Items"
+msgstr "عناصر اليومية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__lang
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__lang
+msgid "Language"
+msgstr "اللغة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order_type__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person_calendar_filter__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__write_uid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_wizard__write_uid
+#, fuzzy
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order_type__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person_calendar_filter__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__write_date
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_wizard__write_date
+#, fuzzy
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__calendar_last_notif_ack
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__calendar_last_notif_ack
+msgid "Last notification marked as read from base Calendar"
+msgstr "آخر إشعار تم تمييزه كمقروء من التقويم الأساسي"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__last_time_entries_checked
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__last_time_entries_checked
+msgid ""
+"Last time the invoices & payments matching was performed for this partner. "
+"It is set either if there's not at least an unreconciled debit and an "
+"unreconciled credit or if you click the \"Done\" button."
+msgstr "آخر مرة تم فيها مطابقة الفواتير والمدفوعات لهذا الشريك. يتم ضبطه إما عند عدم وجود مدين أو دائن غير مسوى، أو عند النقر على زر \"تم\"."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Lat:"
+msgstr "خط عرض:"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__last_time_entries_checked
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__last_time_entries_checked
+msgid "Latest Invoices & Payments Matching Date"
+msgstr "تاريخ آخر مطابقة للفواتير والمدفوعات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__request_late
+msgid "Latest Request Date"
+msgstr "تنفيذ الطلب قبل تاريخ"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_repair
+msgid "Link FSM orders to MRP Repair orders"
+msgstr "ربط أوامر الزيارات بأوامر تصنيع الإصلاح (MRP)"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_maintenance
+msgid "Link FSM orders to maintenance requests"
+msgstr "ربط أوامر الزيارات بطلبات الصيانة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_fleet
+msgid "Link FSM vehicles to Fleet vehicles"
+msgstr "ربط مركبات الزيارات بمركبات الأسطول"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Link Field Service vehicles with Fleet vehicles"
+msgstr "ربط مركبات الخدمة الميدانية بمركبات الأسطول"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Link to Fleet Vehicles"
+msgstr "الربط بمركبات الأسطول"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Link your FSM orders to MRP repair orders"
+msgstr "ربط أوامر الزيارات بأوامر الإصلاح"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Link your FSM orders to Projects and Project Tasks"
+msgstr "ربط أوامر الزيارات بالمشاريع ومهام المشاريع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Link your FSM orders to maintenance requests"
+msgstr "ربط أوامر الزيارات بطلبات الصيانة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__location_ids
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+msgid "Linked Locations"
+msgstr "المواقع المرتبطة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__location_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__location_id
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_stage__stage_type__location
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_wizard__fsm_record_type__location
+#: model:ir.model.fields.selection,name:fieldservice.selection__res_partner__type__fsm_location
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_person_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_search_view
+#, fuzzy
+msgid "Location"
+msgstr "المكان"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__location_directions
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Location Directions"
+msgstr "تفاصيل العنوان"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__notes
+msgid "Location Notes"
+msgstr "ملاحظات للموقع"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_location_person
+msgid "Location Persons"
+msgstr "المسؤولون في الموقع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__phone
+msgid "Location Phone"
+msgstr "هاتف الموقع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__location_owner_id
+msgid "Location Related Owner"
+msgstr "المالك المرتبط بالموقع"
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_report_location
+msgid "Location Reports."
+msgstr "تقارير المواقع."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_person_form_view
+msgid "Location Worker"
+msgstr "فني الموقع"
+
+#. module: fieldservice
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_location_person
+msgid "Location Workers"
+msgstr "فنيو الموقع"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.location_stage_1
+msgid "Location-1"
+msgstr "الموقع-1"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.location_stage_2
+msgid "Location-2"
+msgstr "الموقع-2"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.location_stage_3
+msgid "Location-3"
+msgstr "الموقع-3"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_report_location
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_config_location
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_fsm_location
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_report_location
+msgid "Locations"
+msgstr "المواقع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Long:"
+msgstr "خط الطول:"
+
+#. module: fieldservice
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_order__priority__1
+msgid "Low"
+msgstr "منخفض"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "MRP Repair"
+msgstr "إصلاح التصنيع (MRP)"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Make sure to send the right worker with the appropriate skills"
+msgstr "تأكد من إرسال الفني المناسب بالمهارات الملائمة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_agreement
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Agreements"
+msgstr "إدارة الاتفاقيات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__group_fsm_category
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Categories"
+msgstr "إدارة الفئات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_distribution
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Distribution"
+msgstr "إدارة التوزيع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__group_fsm_equipment
+msgid "Manage Equipment"
+msgstr "إدارة المعدات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Equipments"
+msgstr "إدارة المعدات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_activity
+msgid "Manage FSM Activities"
+msgstr "إدارة أنشطة الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:res.groups,name:fieldservice.group_fsm_equipment
+msgid "Manage Field Service Equipment"
+msgstr "إدارة معدات الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:res.groups,name:fieldservice.group_fsm_template
+msgid "Manage Field Service Order Templates"
+msgstr "إدارة قوالب أوامر الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:res.groups,name:fieldservice.group_fsm_tag
+msgid "Manage Field Service Tags"
+msgstr "إدارة وسوم الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:res.groups,name:fieldservice.group_fsm_team
+msgid "Manage Field Service Teams"
+msgstr "إدارة فرق الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:res.groups,name:fieldservice.group_fsm_category
+msgid "Manage Field Service Worker Categories"
+msgstr "إدارة فئات فنيي الخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Inventory Logistics"
+msgstr "إدارة لوجستيات المخزون"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Maintenance Requests"
+msgstr "إدارة طلبات الصيانة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Order Activities"
+msgstr "إدارة أنشطة الأمر"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Order Sizes"
+msgstr "إدارة أحجام الأوامر"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Order Sub-Statuses"
+msgstr "إدارة الحالات الفرعية للأوامر"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Order Templates"
+msgstr "إدارة قوالب الأوامر"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_recurring
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Recurring Orders"
+msgstr "إدارة الزيارات المتكررة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_skill
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Skills"
+msgstr "إدارة المهارات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_substatus
+msgid "Manage Sub-Statuses"
+msgstr "إدارة الحالات الفرعية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__group_fsm_tag
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Tags"
+msgstr "إدارة الوسوم"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__group_fsm_team
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Teams"
+msgstr "إدارة الفرق"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__group_fsm_template
+msgid "Manage Template"
+msgstr "إدارة القالب"
+
+#. module: fieldservice
+#: model:res.groups,name:fieldservice.group_fsm_territory
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Territories"
+msgstr "إدارة الأقاليم"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__group_fsm_territory
+msgid "Manage Territory"
+msgstr "إدارة الإقليم"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_vehicle
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage Vehicles"
+msgstr "إدارة المركبات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage activities"
+msgstr "إدارة الأنشطة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage agreements and contracts"
+msgstr "إدارة الاتفاقيات والعقود"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage different categories of Field Service workers"
+msgstr "إدارة فئات مختلفة من فنيي الخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage different teams of Field Service workers"
+msgstr "إدارة فرق مختلفة من فنيي الخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage equipments at the service location"
+msgstr "إدارة المعدات في موقع الخدمة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid ""
+"Manage materials and stock operations. Automatically activate Lots & Serial "
+"Numbers."
+msgstr "إدارة المواد وعمليات المخزون. تفعيل أرقام اللوط والأرقام التسلسلية تلقائياً."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage recurrence of field service orders"
+msgstr "إدارة تكرار أوامر الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_route
+msgid "Manage routes"
+msgstr "إدارة المسارات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage routes of your workers"
+msgstr "إدارة مسارات الفنيين"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_size
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage sizes for orders and locations"
+msgstr "إدارة الأحجام للأوامر والمواقع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage sub-status of orders"
+msgstr "إدارة الحالة الفرعية للأوامر"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_purchase
+msgid "Manage subcontractors and their pricelists"
+msgstr "إدارة مقاولي الباطن وقوائم أسعارهم"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage subcontractors with pricelists"
+msgstr "إدارة مقاولي الباطن مع قوائم الأسعار"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage tags on service orders"
+msgstr "إدارة الوسوم على أوامر الخدمة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage templates"
+msgstr "إدارة القوالب"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage territories, branches, districts and regions"
+msgstr "إدارة الأقاليم والفروع والمناطق والمقاطعات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage vehicles for Field Service operations"
+msgstr "إدارة المركبات لعمليات الخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Manage your distribution structure"
+msgstr "إدارة هيكل التوزيع الخاص بك"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__managed_by_id
+msgid "Managed By"
+msgstr "تدار بواسطة"
+
+#. module: fieldservice
+#: model:res.groups,name:fieldservice.group_fsm_manager
+msgid "Manager"
+msgstr "المدير"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Mapping Tools"
+msgstr "أدوات الخرائط"
+
+#. module: fieldservice
+#: model:ir.ui.menu,name:fieldservice.data
+msgid "Master Data"
+msgstr "البيانات الرئيسية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person_calendar_filter__user_id
+msgid "Me"
+msgstr "أنا"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__meeting_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__meeting_ids
+msgid "Meetings"
+msgstr "الاجتماعات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_has_error
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_has_error
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_has_error
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_has_error
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__invoice_warn_msg
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__invoice_warn_msg
+msgid "Message for Invoice"
+msgstr "رسالة للفاتورة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__sale_warn_msg
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__sale_warn_msg
+msgid "Message for Sales Order"
+msgstr "رسالة لأمر المبيعات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__picking_warn_msg
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__picking_warn_msg
+msgid "Message for Stock Picking"
+msgstr "رسالة لانتقاء المخزون"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__mobile
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__mobile
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__mobile
+msgid "Mobile"
+msgstr "الجوال"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__my_activity_date_deadline
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__my_activity_date_deadline
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__my_activity_date_deadline
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__my_activity_date_deadline
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "الموعد النهائي لنشاطي"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "My Orders"
+msgstr "أوامري"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order_type__name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__name
+#, fuzzy
+msgid "Name"
+msgstr "الاسم"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "Need Assigned"
+msgstr "زيارات بدون فنيين"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "Need Scheduled"
+msgstr "تحتاج لجدولة"
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/models/fsm_order.py:0
+#: model:fsm.stage,name:fieldservice.fsm_stage_new
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__activity_calendar_event_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__activity_calendar_event_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__activity_calendar_event_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__activity_calendar_event_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "حدث التقويم للنشاط التالي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__activity_date_deadline
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__activity_date_deadline
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__activity_date_deadline
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__activity_date_deadline
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__activity_summary
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__activity_summary
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__activity_summary
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__activity_summary
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__activity_type_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__activity_type_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__activity_type_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__activity_type_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+msgid "Next Stage"
+msgstr "المرحلة التالية"
+
+#. module: fieldservice
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_order__priority__0
+msgid "Normal"
+msgstr "عادي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__email_normalized
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__email_normalized
+msgid "Normalized Email"
+msgstr "البريد الإلكتروني الموحد"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__notes
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__comment
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__comment
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_form_view
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_needaction_counter
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_needaction_counter
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_needaction_counter
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_needaction_counter
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_has_error_counter
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_has_error_counter
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_has_error_counter
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_has_error_counter
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__message_needaction_counter
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__message_needaction_counter
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__message_needaction_counter
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__message_needaction_counter
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__message_has_error_counter
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__message_has_error_counter
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__message_has_error_counter
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__message_has_error_counter
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__calendar_id
+msgid "Office Hours"
+msgstr "ساعات العمل"
+
+#. module: fieldservice
+#: model:ir.ui.menu,name:fieldservice.operations
+msgid "Operations"
+msgstr "الزيارات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__opportunity_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__opportunity_ids
+msgid "Opportunities"
+msgstr "الفرص"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__opportunity_count
+msgid "Opportunity"
+msgstr "فرصة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__display_name
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_stage__stage_type__order
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Order"
+msgstr "أمر"
+
+#. module: fieldservice
+#: model:mail.message.subtype,name:fieldservice.mt_order_assigned
+msgid "Order Assigned"
+msgstr "تم تعيين الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,name:fieldservice.mt_order_cancelled
+msgid "Order Cancelled"
+msgstr "تم إلغاء الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,name:fieldservice.mt_order_completed
+msgid "Order Completed"
+msgstr "تم اكتمال الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,name:fieldservice.mt_order_confirmed
+msgid "Order Confirmed"
+msgstr "تم تأكيد الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,name:fieldservice.mt_order_new
+msgid "Order Created"
+msgstr "تم إنشاء الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,name:fieldservice.mt_order_enroute
+msgid "Order En Route"
+msgstr "الزيارة في الطريق"
+
+#. module: fieldservice
+#: model:mail.message.subtype,name:fieldservice.mt_order_scheduled
+msgid "Order Scheduled"
+msgstr "تم جدولة الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,name:fieldservice.mt_order_started
+msgid "Order Started"
+msgstr "بدأت الزيارة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_form
+msgid "Order Team"
+msgstr "فريق العمل"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_template
+msgid "Order Templates"
+msgstr "قوالب الزيارات"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_order_type
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_order_type
+msgid "Order Types"
+msgstr "أنواع الزيارات"
+
+#. module: fieldservice
+#: model:mail.message.subtype,description:fieldservice.mt_order_assigned
+msgid "Order assigned"
+msgstr "تم تعيين الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,description:fieldservice.mt_order_cancelled
+msgid "Order cancelled"
+msgstr "تم إلغاء الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,description:fieldservice.mt_order_completed
+msgid "Order completed"
+msgstr "تم اكتمال الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,description:fieldservice.mt_order_confirmed
+msgid "Order confirmed"
+msgstr "تم تأكيد الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,description:fieldservice.mt_order_new
+msgid "Order created"
+msgstr "تم إنشاء الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,description:fieldservice.mt_order_enroute
+msgid "Order en route"
+msgstr "الزيارة في الطريق"
+
+#. module: fieldservice
+#: model:mail.message.subtype,description:fieldservice.mt_order_scheduled
+msgid "Order scheduled"
+msgstr "تم جدولة الزيارة"
+
+#. module: fieldservice
+#: model:mail.message.subtype,description:fieldservice.mt_order_started
+msgid "Order started"
+msgstr "بدأت الزيارة"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_dash_order
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_operation_order
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_report_order
+#: model:ir.actions.act_window,name:fieldservice.fsm_order_action_from_dashboard
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__order_ids
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_config_order
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_dash_order
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_report_order
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "Orders"
+msgstr "الزيارات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__order_count
+msgid "Orders Count"
+msgstr "عدد الزيارات"
+
+#. module: fieldservice
+#: model_terms:ir.actions.act_window,help:fieldservice.action_fsm_report_order
+msgid "Orders Reports."
+msgstr "تقارير الزيارات."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__order_need_assign_count
+msgid "Orders to Assign"
+msgstr "زيارات للتعيين"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__order_need_schedule_count
+msgid "Orders to Schedule"
+msgstr "زيارات للجدولة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Others"
+msgstr "آخرون"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__owned_by_id
+msgid "Owned By"
+msgstr "مملوك بواسطة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__owned_location_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__owned_location_ids
+#: model:ir.model.fields,field_description:fieldservice.field_res_partner__owned_location_ids
+#: model:ir.model.fields,field_description:fieldservice.field_res_users__owned_location_ids
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_partner_fields
+msgid "Owned Locations"
+msgstr "المواقع المملوكة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__owner_id
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_search_view
+msgid "Owner"
+msgstr "المالك"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__parent_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__parent_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__fsm_parent_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_tag__parent_id
+msgid "Parent"
+msgstr "الأصل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__parent_location_id
+msgid "Parent Location"
+msgstr "الموقع الرئيسي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__parent_path
+msgid "Parent Path"
+msgstr "المسار الرئيسي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__parent_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__parent_name
+msgid "Parent name"
+msgstr "اسم الأصل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__contract_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__contract_ids
+msgid "Partner Contracts"
+msgstr "عقود الشركاء"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__use_partner_credit_limit
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__use_partner_credit_limit
+msgid "Partner Limit"
+msgstr "حد الشريك"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__active_partner
+msgid "Partner is Active"
+msgstr "الشريك نشط"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__same_company_registry_partner_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__same_company_registry_partner_id
+msgid "Partner with same Company Registry"
+msgstr "شريك بنفس السجل التجاري"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__same_vat_partner_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__same_vat_partner_id
+msgid "Partner with same Tax ID"
+msgstr "شريك بنفس الرقم الضريبي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__debit_limit
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__debit_limit
+msgid "Payable Limit"
+msgstr "حد المديونية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_payment_method_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__property_payment_method_id
+msgid "Payment Method"
+msgstr "طريقة الدفع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__payment_token_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__payment_token_count
+msgid "Payment Token Count"
+msgstr "عدد رموز الدفع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__payment_token_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__payment_token_ids
+msgid "Payment Tokens"
+msgstr "رموز الدفع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person_calendar_filter__person_checked
+msgid "Person Checked"
+msgstr "تم فحص الشخص"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__phone
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__phone
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__phone
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__phone
+msgid "Phone"
+msgstr "الهاتف"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__phone_sanitized_blacklisted
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__phone_sanitized_blacklisted
+msgid "Phone Blacklisted"
+msgstr "الهاتف في القائمة السوداء"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__phone_mobile_search
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__phone_mobile_search
+msgid "Phone/Mobile"
+msgstr "الهاتف/الجوال"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Planning"
+msgstr "التخطيط"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__pos_order_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__pos_order_ids
+msgid "Pos Order"
+msgstr "أمر نقطة البيع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__pos_order_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__pos_order_count
+msgid "Pos Order Count"
+msgstr "عدد أوامر نقاط البيع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Preferred Workers"
+msgstr "الفنيون المفضلون"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__property_payment_method_id
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__property_payment_method_id
+msgid ""
+"Preferred payment method when paying this vendor. This is used to filter "
+"vendor bills by preferred payment method to register payments in mass. Use "
+"cases: create bank files for batch wires, check runs."
+msgstr ""
+"طريقة الدفع المفضلة عند الدفع لهذا المورد. تُستخدم لتصفية فواتير الموردين حسب طريقة الدفع المفضلة لتسجيل الدفعات بشكل جماعي."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+msgid "Previous Stage"
+msgstr "المرحلة السابقة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_product_pricelist
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__property_product_pricelist
+msgid "Pricelist"
+msgstr "قائمة الأسعار"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__territory_manager_id
+#: model:ir.model.fields,field_description:fieldservice.field_res_territory__person_id
+msgid "Primary Assignment"
+msgstr "التكليف الأساسي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__contact_id
+msgid "Primary Contact"
+msgstr "جهة الاتصال الأساسية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__service_location_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__service_location_id
+#: model:ir.model.fields,field_description:fieldservice.field_res_partner__service_location_id
+#: model:ir.model.fields,field_description:fieldservice.field_res_users__service_location_id
+msgid "Primary Service Location"
+msgstr "موقع الزيارة الأساسي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__priority
+msgid "Priority"
+msgstr "الأولوية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__legend_priority
+msgid "Priority Management Explanation"
+msgstr "شرح إدارة الأولويات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__project_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__project_ids
+msgid "Projects"
+msgstr "المشاريع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_project
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Projects and Tasks"
+msgstr "المشاريع والمهام"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Purchase Field Services"
+msgstr "شراء الخدمات الميدانية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__rating_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__rating_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__rating_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__rating_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__rating_ids
+msgid "Ratings"
+msgstr "التقييمات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_wizard__fsm_record_type
+msgid "Record Type"
+msgstr "نوع السجل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__ref
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__ref
+msgid "Reference"
+msgstr "المرجع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Refresh"
+msgstr "تحديث"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Refresh Localization"
+msgstr "تحديث الموقع الجغرافي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__region_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__region_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__region_id
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Region"
+msgstr "المقاطعة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__region_manager_id
+msgid "Region Manager"
+msgstr "مدير المقاطعة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__parent_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__parent_id
+msgid "Related Company"
+msgstr "الشركة المرتبطة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__fsm_location_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__fsm_location_id
+#: model:ir.model.fields,field_description:fieldservice.field_res_partner__fsm_location_id
+#: model:ir.model.fields,field_description:fieldservice.field_res_users__fsm_location_id
+msgid "Related FS Location"
+msgstr "موقع الخدمة الميدانية المرتبط"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__related_owner_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__owner_id
+msgid "Related Owner"
+msgstr "المالك"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__partner_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__partner_id
+msgid "Related Partner"
+msgstr "جهة الاتصال الرئيسية"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__employee_ids
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__employee_ids
+msgid "Related employees based on their private address"
+msgstr "الموظفون المرتبطون بناءً على عنوانهم الخاص"
+
+#. module: fieldservice
+#: model:ir.ui.menu,name:fieldservice.reporting
+msgid "Reporting"
+msgstr "التقارير"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Request Workers"
+msgstr "طلب فنيين"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Requirements"
+msgstr "المتطلبات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__resolution
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Resolution"
+msgstr "الحل"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.report_fsm_order_document
+msgid "Resolution Notes"
+msgstr "ملاحظات الحل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__activity_user_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__activity_user_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__activity_user_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__activity_user_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_route_availability
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Restricts blackout days for Scheduled Start (ETA)"
+msgstr "تقييد أيام التوقف للبدء المجدول"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Restricts route availability"
+msgstr "تقييد توافر المسارات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Routes"
+msgstr "المسارات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_has_sms_error
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_has_sms_error
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_has_sms_error
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_has_sms_error
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسالة النصية القصيرة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__sale_order_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__sale_order_count
+msgid "Sale Order Count"
+msgstr "عدد أوامر البيع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__sale_order_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__sale_order_ids
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__sale_warn
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__sale_warn
+msgid "Sales Warnings"
+msgstr "تحذيرات المبيعات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__user_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__user_id
+msgid "Salesperson"
+msgstr "مسؤول المبيعات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__phone_sanitized
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__phone_sanitized
+msgid "Sanitized Number"
+msgstr "رقم هاتف منقح"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
+msgid "Schedule Details"
+msgstr "تفاصيل الجدول"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__date_today_order_tz
+msgid "Scheduled Date (User TZ)"
+msgstr "التاريخ المجدول (بالتوقيت المحلي للمستخدم)"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__scheduled_duration
+msgid "Scheduled Duration"
+msgstr "المدة المخططة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__scheduled_date_end
+msgid "Scheduled End"
+msgstr "نهاية المخطط"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__scheduled_date_start
+msgid "Scheduled Start (ETA)"
+msgstr "بداية المخطط (الوقت المتوقع)"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__scheduled_duration
+msgid "Scheduled duration of the work in hours"
+msgstr "المدة المخططة للعمل بالساعات"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_search_view
+msgid "Search FSM Location"
+msgstr "البحث عن موقع الخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_search
+msgid "Search FSM Teams"
+msgstr "البحث عن فرق الخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_stage_search_view
+msgid "Search FSM Workers"
+msgstr "البحث عن فنيي الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__search_on_complete_name
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__search_on_complete_name
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Search Location By Hierarchy"
+msgstr "البحث عن الموقع بالتدرج الهرمي"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_person_search_view
+msgid "Search Location Worker"
+msgstr "البحث عن فني موقع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Search Locations based on their full hierarchy name"
+msgstr "البحث عن المواقع بناءً على اسمها الهرمي الكامل"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.partner_wizard_view
+msgid ""
+"Select whether you want to convert this record to a Field\n"
+"                    Service Worker or Location."
+msgstr "اختر ما إذا كنت تريد تحويل هذا السجل إلى فني خدمة ميدانية أو موقع."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__invoice_warn
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__picking_warn
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__sale_warn
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__invoice_warn
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__picking_warn
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__sale_warn
+msgid ""
+"Selecting the \"Warning\" option will notify user with the message, "
+"Selecting \"Blocking Message\" will throw an exception with the message and "
+"block the flow. The Message has to be written in the next field."
+msgstr "اختيار \"تحذير\" سيقوم بإعلام المستخدم بالرسالة، واختيار \"رسالة حظر\" سيؤدي إلى إصدار استثناء مع الرسالة وحظر العملية. يجب كتابة الرسالة في الحقل التالي."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__self
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__self
+msgid "Self"
+msgstr "النفس"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_sale
+msgid "Sell FSM orders"
+msgstr "بيع طلبات الخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Sell Field Service Orders"
+msgstr "بيع أوامر الخدمة الميدانية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Sell products that generate field service orders"
+msgstr "بيع المنتجات التي تنشئ أوامر خدمة ميدانية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__sequence
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__sequence
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__sequence
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_location
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Service Locations"
+msgstr "مواقع الخدمة"
+
+#. module: fieldservice
+#: model:ir.actions.report,name:fieldservice.action_report_fsm_order
+msgid "Service Order"
+msgstr "أمر خدمة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_graph_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_pivot_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Service Orders"
+msgstr "أوامر الخدمة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__is_closed
+#: model:ir.model.fields,help:fieldservice.field_fsm_stage__is_closed
+msgid "Services in this stage are considered as closed."
+msgstr "الخدمات في هذه المرحلة تُعتبر مغلقة."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__use_partner_credit_limit
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__use_partner_credit_limit
+msgid "Set a value greater than 0.0 to activate a credit limit check"
+msgstr "حدد قيمة أكبر من 0.0 لتفعيل فحص حد الائتمان"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_config
+#: model:ir.ui.menu,name:fieldservice.settings
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__partner_share
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__partner_share
+msgid "Share Partner"
+msgstr "مشاركة الشريك"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__show_credit_limit
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__show_credit_limit
+msgid "Show Credit Limit"
+msgstr "إظهار حد الائتمان"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__signup_expiration
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__signup_expiration
+msgid "Signup Expiration"
+msgstr "انتهاء صلاحية التسجيل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__signup_token
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__signup_token
+msgid "Signup Token"
+msgstr "رمز التسجيل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__signup_type
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__signup_type
+msgid "Signup Token Type"
+msgstr "نوع رمز التسجيل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__signup_valid
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__signup_valid
+msgid "Signup Token is Valid"
+msgstr "رمز التسجيل صالح"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__signup_url
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__signup_url
+msgid "Signup URL"
+msgstr "رابط التسجيل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__stage_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__stage_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_model_mixin__stage_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__stage_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__stage_id
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_tree_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_stage_form_view
+msgid "Stage"
+msgstr "المرحلة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__custom_color
+msgid "Stage Color"
+msgstr "لون المرحلة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_stage_form_view
+msgid "Stage Description and Tooltips"
+msgstr "وصف المرحلة والتلميحات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__stage_name
+msgid "Stage Name"
+msgstr "اسم المرحلة"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_stage
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__stage_ids
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_stage
+msgid "Stages"
+msgstr "المراحل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__starred_message_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__starred_message_ids
+msgid "Starred Message"
+msgstr "رسالة مميزة بنجمة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__state_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__state_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__state_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__state_id
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_create_sub_location_wizard
+msgid "State"
+msgstr "المحافظة/الولاية"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__activity_state
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__activity_state
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__activity_state
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__activity_state
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تاريخ الاستحقاق مر بالفعل\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: أنشطة مستقبلية."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__picking_warn
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__picking_warn
+msgid "Stock Picking"
+msgstr "استلام الشحنة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__street
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__street
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__street
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__street
+msgid "Street"
+msgstr "الشارع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_create_sub_location_wizard
+msgid "Street 2..."
+msgstr "شارع 2..."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__street_name
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__street_name
+msgid "Street Name"
+msgstr "اسم الشارع"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_create_sub_location_wizard
+msgid "Street..."
+msgstr "الشارع..."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__street2
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__street2
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__street2
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__street2
+msgid "Street2"
+msgstr "الشارع 2"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__sublocation_count
+msgid "Sub Locations"
+msgstr "مواقع فرعية"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Sub-Locations"
+msgstr "مواقع فرعية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__supplier_rank
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__supplier_rank
+msgid "Supplier Rank"
+msgstr "تصنيف المورد"
+
+#. module: fieldservice
+#: model:ir.model.constraint,message:fieldservice.constraint_fsm_tag_name_uniq
+msgid "Tag name already exists!"
+msgstr "اسم الوسم موجود بالفعل!"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_fsm_tag
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__category_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__tag_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__category_id
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_tag
+msgid "Tags"
+msgstr "الوسوم"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__task_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__task_ids
+msgid "Tasks"
+msgstr "المهام"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__vat
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__vat
+msgid "Tax ID"
+msgstr "الرقم الضريبي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__team_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__team_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__team_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__team_id
+msgid "Team"
+msgstr "الفريق"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_form
+msgid "Team Name"
+msgstr "اسم الفريق"
+
+#. module: fieldservice
+#: model:ir.model.constraint,message:fieldservice.constraint_fsm_team_name_uniq
+msgid "Team name already exists!"
+msgstr "اسم الفريق موجود بالفعل!"
+
+#. module: fieldservice
+#: model:ir.actions.act_window,name:fieldservice.action_team_dashboard
+#: model:ir.actions.act_window,name:fieldservice.action_team_settings
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__team_ids
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_dash_team
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_team
+msgid "Teams"
+msgstr "الفرق"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__template_id
+msgid "Template"
+msgstr "قالب"
+
+#. module: fieldservice
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_template
+msgid "Templates"
+msgstr "قوالب"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__territory_ids
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+msgid "Territories"
+msgstr "المناطق"
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_res_territory
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__territory_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__territory_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__territory_id
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Territory"
+msgstr "المنطقة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__country_code
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"رمز الدولة ISO المكون من حرفين.\n"
+"يمكنك استخدام هذا الحقل للبحث السريع."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__vat
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__vat
+msgid ""
+"The Tax Identification Number. Values here will be validated based on the "
+"country format. You can use '/' to indicate that the partner is not subject "
+"to tax."
+msgstr "رقم التعريف الضريبي. سيتم التحقق من القيم هنا بناءً على تنسيق الدولة. يمكنك استخدام '/' للإشارة إلى أن الشريك غير خاضع للضريبة."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__property_account_position_id
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__property_account_position_id
+msgid ""
+"The fiscal position determines the taxes/accounts used for this contact."
+msgstr "يحدد الموقف الضريبي الضرائب/الحسابات المستخدمة لجهة الاتصال هذه."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__user_id
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__user_id
+msgid "The internal user in charge of this contact."
+msgstr "المستخدم الداخلي المسؤول عن جهة الاتصال هذه."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__pos_order_count
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__pos_order_count
+msgid "The number of point of sales orders related to this customer"
+msgstr "عدد أوامر نقاط البيع المتعلقة بهذا العميل"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__has_unreconciled_entries
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__has_unreconciled_entries
+msgid ""
+"The partner has at least one unreconciled debit and credit since last time "
+"the invoices & payments matching was performed."
+msgstr "لدى الشريك عملية واحدة على الأقل غير مسواة بين المدين والدائن منذ آخر مرة تم فيها إجراء مطابقة الفواتير والمدفوعات."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__company_registry
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__company_registry
+msgid ""
+"The registry number of the company. Use it if it is different from the Tax "
+"ID. It must be unique across all partners of a same country"
+msgstr "رقم السجل التجاري للشركة. استخدمه إذا كان مختلفًا عن الرقم الضريبي. يجب أن يكون فريدًا لجميع الشركاء في نفس الدولة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__property_stock_customer
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__property_stock_customer
+msgid ""
+"The stock location used as destination when sending goods to this contact."
+msgstr "موقع المخزون المستخدم كوجهة عند إرسال البضائع إلى جهة الاتصال هذه."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__property_stock_supplier
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__property_stock_supplier
+msgid ""
+"The stock location used as source when receiving goods from this contact."
+msgstr "موقع المخزون المستخدم كمصدر عند استلام البضائع من جهة الاتصال هذه."
+
+#. module: fieldservice
+#: model:ir.model.constraint,message:fieldservice.constraint_fsm_location_person_location_person_uniq
+msgid "The worker is already linked to this location."
+msgstr "الفني مرتبط بالفعل بهذا الموقع."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__property_account_payable_id
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__property_account_payable_id
+msgid ""
+"This account will be used instead of the default one as the payable account "
+"for the current partner"
+msgstr "سيتم استخدام هذا الحساب بدلاً من الحساب الافتراضي كحساب دائن للشريك الحالي"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__property_account_receivable_id
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__property_account_receivable_id
+msgid ""
+"This account will be used instead of the default one as the receivable "
+"account for the current partner"
+msgstr "سيتم استخدام هذا الحساب بدلاً من الحساب الافتراضي كحساب مدين للشريك الحالي"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__email_normalized
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__email_normalized
+msgid ""
+"This field is used to search on email address as the primary email field can "
+"contain more than strictly an email address."
+msgstr "يُستخدم هذا الحقل للبحث في عنوان البريد الإلكتروني، حيث يمكن أن يحتوي حقل البريد الإلكتروني الأساسي على أكثر من مجرد عنوان بريد إلكتروني."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__property_supplier_payment_term_id
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__property_supplier_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for purchase "
+"orders and vendor bills"
+msgstr "سيتم استخدام شروط الدفع هذه بدلاً من الافتراضية لأوامر الشراء وفواتير الموردين"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__property_payment_term_id
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sales orders "
+"and customer invoices"
+msgstr "سيتم استخدام شروط الدفع هذه بدلاً من الافتراضية لأوامر البيع وفواتير العملاء"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__property_product_pricelist
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__property_product_pricelist
+msgid ""
+"This pricelist will be used, instead of the default one, for sales to the "
+"current partner"
+msgstr "سيتم استخدام قائمة الأسعار هذه بدلاً من الافتراضية للمبيعات إلى الشريك الحالي"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_stage__fold
+msgid ""
+"This stage is folded in the kanban view when there are no record in that "
+"stage to display."
+msgstr "يتم طي هذه المرحلة في عرض كانبان عندما لا توجد سجلات لعرضها في هذه المرحلة."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__tz
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__tz
+msgid "Timezone"
+msgstr "المنطقة الزمنية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__tz_offset
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__tz_offset
+msgid "Timezone offset"
+msgstr "فارق التوقيت"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__title
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__title
+msgid "Title"
+msgstr "اللقب"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "To Assign"
+msgstr "بانتظار التعيين"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "To Do"
+msgstr "قيد التنفيذ"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
+msgid "To Schedule"
+msgstr "بانتظار الجدولة"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Today Orders"
+msgstr "طلبات اليوم"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__total_invoiced
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__total_invoiced
+msgid "Total Invoiced"
+msgstr "إجمالي الفواتير الصادرة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__debit
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__debit
+msgid "Total Payable"
+msgstr "إجمالي المبالغ الدائنة"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__credit
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__credit
+msgid "Total Receivable"
+msgstr "إجمالي المبالغ المدينة"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__credit
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__credit
+msgid "Total amount this customer owes you."
+msgstr "إجمالي المبلغ المستحق على هذا العميل لك."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__debit
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "إجمالي المبلغ الذي يتعين عليك دفعه لهذا المورد."
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__type
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__stage_type
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_template__type_id
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_type_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_stage_search_view
+msgid "Type"
+msgstr "النوع"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__activity_exception_decoration
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__activity_exception_decoration
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__activity_exception_decoration
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__activity_exception_decoration
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي في السجل."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Unassigned"
+msgstr "غير معين"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
+msgid "Unscheduled"
+msgstr "غير مجدول"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+msgid "Updated on:"
+msgstr "تم التحديث في:"
+
+#. module: fieldservice
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_order__priority__3
+msgid "Urgent"
+msgstr "عاجل"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_location_builder
+msgid "Use FSM Location Builder"
+msgstr "استخدام منشئ مواقع الخدمة الميدانية"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_geoengine
+msgid "Use GeoEngine"
+msgstr "استخدام المحرك الجغرافي (GeoEngine)"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Use GeoEngine with OpenStreetMap"
+msgstr "استخدام المحرك الجغرافي مع خرائط الشوارع المفتوحة (OpenStreetMap)"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__custom_color
+#: model:ir.model.fields,help:fieldservice.field_fsm_stage__custom_color
+msgid "Use Hex Code only Ex:-#FFFFFF"
+msgstr "استخدم كود هيكس (Hex Code) فقط، مثال: #FFFFFF"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__module_fieldservice_stock
+msgid "Use Odoo Logistics"
+msgstr "استخدام لوجستيات أودو"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__barcode
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__barcode
+msgid "Use a barcode to identify this contact."
+msgstr "استخدم الباركود لتمييز جهة الاتصال هذه."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_stage__is_default
+msgid "Used a default stage"
+msgstr "مستخدم كمرحلة افتراضية"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_stage__sequence
+msgid "Used to order stages. Lower is better."
+msgstr "يُستخدم لترتيب المراحل. القيمة الأقل تعني أولوية أعلى."
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__sequence
+msgid "Used to sort teams. Lower is better."
+msgstr "يُستخدم لفرز الفرق. القيمة الأقل تعني أولوية أعلى."
+
+#. module: fieldservice
+#: model:res.groups,name:fieldservice.group_fsm_user
+msgid "User"
+msgstr "مستخدم"
+
+#. module: fieldservice
+#: model:res.groups,name:fieldservice.group_fsm_user_own
+msgid "User (only own documents)"
+msgstr "مستخدم (مستنداته الخاصة فقط)"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__user_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__user_ids
+msgid "Users"
+msgstr "المستخدمين"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Vehicles"
+msgstr "المركبات"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_stock_supplier
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__property_stock_supplier
+msgid "Vendor Location"
+msgstr "موقع المورد"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_supplier_payment_term_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__property_supplier_payment_term_id
+msgid "Vendor Payment Terms"
+msgstr "شروط دفع المورد"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__website
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__website
+msgid "Website Link"
+msgstr "رابط الموقع الإلكتروني"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__website_message_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__website_message_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__website_message_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__website_message_ids
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع الإلكتروني"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__website_message_ids
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__website_message_ids
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__website_message_ids
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__website_message_ids
+#: model:ir.model.fields,help:fieldservice.field_fsm_team__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع الإلكتروني"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__tz
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__tz
+msgid ""
+"When printing documents and exporting/importing data, time values are "
+"computed according to this timezone.\n"
+"If the timezone is not set, UTC (Coordinated Universal Time) is used.\n"
+"Anywhere else, time values are computed according to the time offset of your "
+"web client."
+msgstr ""
+"عند طباعة المستندات وتصدير/استيراد البيانات، يتم حساب قيم الوقت وفقًا لهذه المنطقة الزمنية.\n"
+"إذا لم يتم تعيين المنطقة الزمنية، يتم استخدام توقيت UTC.\n"
+"في أي مكان آخر، يتم حساب قيم الوقت وفقًا لفارق التوقيت لعميل الويب الخاص بك."
+
+#. module: fieldservice
+#: model:ir.model,name:fieldservice.model_fsm_create_sub_location_wizard
+msgid "Wizard to Create Sub Location"
+msgstr "معالج إنشاء موقع فرعي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location_person__person_id
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_stage__stage_type__worker
+#: model:ir.model.fields.selection,name:fieldservice.selection__fsm_wizard__fsm_record_type__person
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_search_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_person_search_view
+msgid "Worker"
+msgstr "الفني"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__person_phone
+msgid "Worker Phone"
+msgstr "هاتف الفني"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.worker_stage_1
+msgid "Worker Stage 1"
+msgstr "مرحلة الفني 1"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.worker_stage_2
+msgid "Worker Stage 2"
+msgstr "مرحلة الفني 2"
+
+#. module: fieldservice
+#: model:fsm.stage,name:fieldservice.worker_stage_3
+msgid "Worker Stage 3"
+msgstr "مرحلة الفني 3"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__person_ids
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_config_person
+#: model:ir.ui.menu,name:fieldservice.menu_fsm_person
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Workers"
+msgstr "الفنيين"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__calendar_id
+msgid "Working Schedule"
+msgstr "جدول العمل"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_stage_form_view
+msgid ""
+"You can add a description to help your coworkers understand the meaning and "
+"purpose of the stage."
+msgstr "يمكنك إضافة وصف لمساعدة زملائك في العمل على فهم معنى وهدف هذه المرحلة."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+msgid "You can archive the contact"
+msgstr "يمكنك أرشفة جهة الاتصال"
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/models/fsm_location.py:0
+#, python-format
+msgid "You cannot create recursive location."
+msgstr "لا يمكنك إنشاء موقع متكرر (موقع يكون أباً لنفسه)."
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/models/fsm_order.py:0
+#, python-format
+msgid "You cannot delete this order."
+msgstr "لا يمكنك حذف هذا الطلب."
+
+#. module: fieldservice
+#: model:ir.model.constraint,message:fieldservice.constraint_fsm_person_calendar_filter_user_id_fsm_person_id_unique
+msgid "You cannot have the same worker twice."
+msgstr "لا يمكن تكرار نفس الفني مرتين."
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/models/fsm_order.py:0
+#, python-format
+msgid "You must create an FSM order stage first."
+msgstr "يجب إنشاء مرحلة لطلبات الخدمة الميدانية أولاً."
+
+#. module: fieldservice
+#. odoo-python
+#: code:addons/fieldservice/models/fsm_order.py:0
+#, python-format
+msgid "You must create an FSM team first."
+msgstr "يجب إنشاء فريق خدمة ميدانية أولاً."
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
+#: model_terms:ir.ui.view,arch_db:fieldservice.view_create_sub_location_wizard
+msgid "ZIP"
+msgstr "الرمز البريدي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__zip_id
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__zip_id
+msgid "ZIP Location"
+msgstr "موقع الرمز البريدي"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_create_sub_location_wizard__zip
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__zip
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__zip
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__zip
+msgid "Zip"
+msgstr "الرمز البريدي"
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__days_sales_outstanding
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__days_sales_outstanding
+msgid ""
+"[(Total Receivable/Total Revenue) * number of days since the first invoice] "
+"for this customer"
+msgstr "[(إجمالي المبالغ المدينة / إجمالي الإيرادات) * عدد الأيام منذ الفاتورة الأولى] لهذا العميل"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_tag_form_view
+msgid "tag"
+msgstr "وسم"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_template_form_view
+msgid "template"
+msgstr "قالب"

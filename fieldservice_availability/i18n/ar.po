@@ -1,0 +1,237 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fieldservice_availability
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: fieldservice_availability
+#: model:ir.model.constraint,message:fieldservice_availability.constraint_fsm_blackout_day_unique_blackout_day
+#, fuzzy
+msgid "A blackout day with this date already exists!"
+msgstr "اسم المعده موجود مسبقا"
+
+#. module: fieldservice_availability
+#: model:ir.model.constraint,message:fieldservice_availability.constraint_fsm_stress_day_unique_stress_day
+#, fuzzy
+msgid "A stress day with this date already exists!"
+msgstr "اسم المعده موجود مسبقا"
+
+#. module: fieldservice_availability
+#: model_terms:ir.actions.act_window,help:fieldservice_availability.action_fsm_blackout_days
+#, fuzzy
+msgid "Add a Field Service Blackout Day here."
+msgstr "تعيين المعدات اللازمه للزياره"
+
+#. module: fieldservice_availability
+#: model_terms:ir.actions.act_window,help:fieldservice_availability.action_fsm_blackout_groups
+#, fuzzy
+msgid "Add a Field Service Blackout Group here."
+msgstr "تعيين المعدات اللازمه للزياره"
+
+#. module: fieldservice_availability
+#: model_terms:ir.actions.act_window,help:fieldservice_availability.action_fsm_delivery_time_range
+#, fuzzy
+msgid "Add a Field Service Delivery Time Range here."
+msgstr "تعيين المعدات اللازمه للزياره"
+
+#. module: fieldservice_availability
+#: model_terms:ir.actions.act_window,help:fieldservice_availability.action_fsm_stress_days
+#, fuzzy
+msgid "Add a Field Service Stress Day here."
+msgstr "تعيين المعدات اللازمه للزياره"
+
+#. module: fieldservice_availability
+#: model:ir.ui.menu,name:fieldservice_availability.menu_fsm_config_availability
+#, fuzzy
+msgid "Availability"
+msgstr "الكميه المتاحه"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_day__date
+msgid "Blackout Day"
+msgstr ""
+
+#. module: fieldservice_availability
+#: model:ir.actions.act_window,name:fieldservice_availability.action_fsm_blackout_days
+#: model:ir.ui.menu,name:fieldservice_availability.menu_fsm_blackout_days_root
+#, fuzzy
+msgid "Blackout Days"
+msgstr "<span>ايام</span>"
+
+#. module: fieldservice_availability
+#: model:ir.model,name:fieldservice_availability.model_fsm_blackout_day
+#, fuzzy
+msgid "Blackout Days (No Service)"
+msgstr "<span>ايام</span>"
+
+#. module: fieldservice_availability
+#: model:ir.model,name:fieldservice_availability.model_fsm_blackout_group
+#, fuzzy
+msgid "Blackout Group"
+msgstr "تجميع حسب"
+
+#. module: fieldservice_availability
+#: model:ir.actions.act_window,name:fieldservice_availability.action_fsm_blackout_groups
+#: model:ir.ui.menu,name:fieldservice_availability.menu_fsm_blackout_group_root
+msgid "Blackout Groups"
+msgstr ""
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_day__create_uid
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_group__create_uid
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__create_uid
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_stress_day__create_uid
+#, fuzzy
+msgid "Created by"
+msgstr "أنشئ بواسطه"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_day__create_date
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_group__create_date
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__create_date
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_stress_day__create_date
+#, fuzzy
+msgid "Created on"
+msgstr "انشئ في"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,help:fieldservice_availability.field_fsm_delivery_time_range__sequence
+msgid "Customize the order of time ranges. Lower numbers are shown first."
+msgstr ""
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_group__fsm_blackout_day_ids
+msgid "Days"
+msgstr "الايام"
+
+#. module: fieldservice_availability
+#: model:ir.model,name:fieldservice_availability.model_fsm_delivery_time_range
+#: model_terms:ir.ui.view,arch_db:fieldservice_availability.view_fsm_delivery_time_range_form
+msgid "Delivery Time Range"
+msgstr "متوسط وقت التوصيل"
+
+#. module: fieldservice_availability
+#: model:ir.actions.act_window,name:fieldservice_availability.action_fsm_delivery_time_range
+#: model:ir.ui.menu,name:fieldservice_availability.menu_fsm_delivery_time_range
+msgid "Delivery Time Ranges"
+msgstr "متوسطات وقت التوصيل"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_day__name
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_stress_day__name
+#, fuzzy
+msgid "Description"
+msgstr "وصف"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_day__display_name
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_group__display_name
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__display_name
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_stress_day__display_name
+#, fuzzy
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__end_time
+#, fuzzy
+msgid "End Time"
+msgstr "تاريخ الانتهاء الفعلي"
+
+#. module: fieldservice_availability
+#: model:ir.model,name:fieldservice_availability.model_fsm_stress_day
+#, fuzzy
+msgid "High-Demand Days"
+msgstr "<span>ايام</span>"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_day__id
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_group__id
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__id
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_stress_day__id
+#, fuzzy
+msgid "ID"
+msgstr "الرقم المعرف"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_day__write_uid
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_group__write_uid
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__write_uid
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_stress_day__write_uid
+#, fuzzy
+msgid "Last Updated by"
+msgstr "اخر تحديث بواسطه"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_day__write_date
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_group__write_date
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__write_date
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_stress_day__write_date
+#, fuzzy
+msgid "Last Updated on"
+msgstr "اخر تحديث في"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_blackout_group__name
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__name
+#, fuzzy
+msgid "Name"
+msgstr "اسم الاختبار"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__route_id
+msgid "Route"
+msgstr "المسار"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__sequence
+#, fuzzy
+msgid "Sequence"
+msgstr "الترقيم"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,help:fieldservice_availability.field_fsm_delivery_time_range__route_id
+msgid ""
+"Specific route this time range applies to. Leave empty for global time "
+"ranges."
+msgstr ""
+"تحديد وقت معين لهذا المسار - او يترك فارغا لاستخدام اعدادات الوقت العامه"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_delivery_time_range__start_time
+#, fuzzy
+msgid "Start Time"
+msgstr "تاريخ البدء الفعلي"
+
+#. module: fieldservice_availability
+#: model:ir.model.fields,field_description:fieldservice_availability.field_fsm_stress_day__date
+msgid "Stress Day"
+msgstr "وقت الذروة"
+
+#. module: fieldservice_availability
+#: model:ir.actions.act_window,name:fieldservice_availability.action_fsm_stress_days
+#: model:ir.ui.menu,name:fieldservice_availability.menu_fsm_stress_days_root
+#, fuzzy
+msgid "Stress Days"
+msgstr "<span>ايام</span>"
+
+#. module: fieldservice_availability
+#. odoo-python
+#: code:addons/fieldservice_availability/models/fsm_delivery_time_range.py:0
+#, python-format
+msgid "The start time must be earlier than the end time."
+msgstr "وقت البدء يجب ان يكون قبل وقت الانتهاء"
